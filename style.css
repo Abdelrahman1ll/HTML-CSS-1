@@ -1,0 +1,130 @@
+/* =================
+   table of contents
+   =================
+   
+   1. globol styles
+   2. header
+   3. main
+*/
+* {
+  margin: 0;
+  font-family: "Gill Sans", sans-serif;
+}
+.cover {
+  background-image: url(https://taleek.com/img/bg-layer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: currentcolor;
+}
+/*===========
+  2. header
+  =========== 
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.img1 {
+  margin: 50px;
+  display: flex;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+p {
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+nav {
+  margin: 60px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  font-size: 20px;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+a:hover {
+  opacity: 1;
+}
+/* =========
+   3. main
+   =========
+ */
+main {
+  position: relative;
+}
+
+h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+}
+.img2 {
+  width: 100%;
+  height: 500px;
+
+  text-align: center;
+  animation: img2 5s infinite linear;
+}
+
+@keyframes img2 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(50px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.lift {
+  position: absolute;
+  top: 400px;
+  left: 20%;
+}
+button {
+  display: block;
+  background-color: gold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  animation: mybutton 5s infinite linear;
+}
+
+@keyframes mybutton {
+  0% {
+    padding: 5px;
+  }
+  50% {
+    padding: 10px 15px;
+  }
+  100% {
+    padding: 5px;
+  }
+}
+
+.img3 {
+  width: 130px;
+}
+@media (max-width: 1000px) {
+  .lift {
+    position: sticky;
+
+    text-align: center;
+  }
+  button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
